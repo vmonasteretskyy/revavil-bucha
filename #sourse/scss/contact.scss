@@ -1,0 +1,463 @@
+.contact-section {
+    padding: 80px 0;
+}
+
+.contact__leftsect {
+    max-width: 536px;
+
+    .title {
+        margin-bottom: 80px;
+        color: #000;
+        letter-spacing: 0.045em;
+        font-size: 38px;
+        line-height: 40px;
+    }
+
+    .descr {
+        margin-bottom: 28px;
+
+        p,
+        a {
+            font-family: 'Manrope', sans-serif;
+            font-size: 24px;
+            line-height: 32px;
+            letter-spacing: 0.045em;
+            color: #000;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        a {
+            text-decoration: none;
+        }
+    }
+
+    ul.contsoc {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 11px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            a {
+                transition: 0.3s;
+
+                &:hover {
+                    opacity: 0.7;
+                }
+
+                img {
+                    height: 37px;
+                }
+            }
+        }
+    }
+
+    .subscribe {
+        padding: 44px 0 0 0;
+
+        .subscribe__title {
+            text-transform: uppercase;
+            margin-bottom: 27px;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 30px;
+            color: #000;
+            letter-spacing: 0.045em;
+            font-family: 'Manrope', sans-serif;
+        }
+
+        .subscribe__inpfield {
+            position: relative;
+
+            input {
+                width: 100%;
+                height: 60px;
+                border: 1px solid rgba(0, 0, 0, 0.5);
+                border-radius: 5px;
+                color: #000;
+                letter-spacing: 0.02em;
+                font-weight: 300;
+                font-size: 24px;
+                font-family: 'Manrope', sans-serif;
+                padding-left: 27px;
+                outline: none;
+
+                &::placeholder {
+                    color: #858585;
+                }
+            }
+        }
+
+        .submbtn {
+            margin-top: 35px;
+            height: 60px;
+            color: #000;
+            letter-spacing: 0.02em;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 60px;
+            font-family: 'Manrope', sans-serif;
+            border: none;
+            outline: none;
+            background-color: transparent;
+            cursor: pointer;
+            transition: 0.3s;
+
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+    }
+}
+
+.contact__rightsect {
+    padding-left: 30px;
+    padding-right: 80px;
+    position: relative;
+
+    .title {
+        margin-bottom: 80px;
+        color: #000;
+        letter-spacing: 0.045em;
+        font-size: 38px;
+        line-height: 40px;
+    }
+}
+
+.contform {
+    position: relative;
+
+    &::after {
+        content: '';
+        display: inline-block;
+        width: 2px;
+        background: rgba(0, 0, 0, 0.5);
+        height: calc(100% - 110px);
+        position: absolute;
+        left: -120px;
+        top: 0;
+    }
+
+    .contform__inpfield {
+        position: relative;
+        margin-bottom: 10px;
+
+        input {
+            width: 100%;
+            height: 60px;
+            border: 1px solid rgba(0, 0, 0, 0.5);
+            border-radius: 5px;
+            padding-left: 30px;
+            outline: none;
+            color: #000;
+            letter-spacing: 0.02em;
+            font-weight: 300;
+            font-size: 24px;
+            font-family: 'Manrope', sans-serif;
+
+            &::placeholder {
+                color: #858585;
+            }
+        }
+
+        textarea {
+            height: 158px;
+            width: 100%;
+            border: 1px solid rgba(0, 0, 0, 0.5);
+            border-radius: 5px;
+            padding-left: 30px;
+            outline: none;
+            color: #000;
+            letter-spacing: 0.02em;
+            font-weight: 300;
+            font-size: 24px;
+            font-family: 'Manrope', sans-serif;
+            padding-top: 10px;
+            resize: none;
+
+            &::placeholder {
+                color: #858585;
+            }
+        }
+    }
+
+    .contsubm {
+        margin-top: 35px;
+        letter-spacing: 0.02em;
+        color: #000000;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 60px;
+        font-family: 'Manrope', sans-serif;
+        height: 60px;
+        outline: none;
+        padding: 0;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        transition: 0.3s;
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+}
+
+.contact__rightsect .title,
+.contact__leftsect .title {
+    font-style: italic;
+    font-weight: 700;
+    font-size: 38px;
+    text-transform: uppercase;
+
+}
+
+.contform .contsubm,
+.contact__leftsect .subscribe .submbtn {
+    border-bottom: 1px solid #000;
+    height: 50px;
+}
+
+
+@media(max-width:1800.8px) {
+    .contform:after {
+        left: -80px;
+    }
+}
+
+@media(max-width:1800.8px) {
+    .contform:after {
+        left: -60px;
+    }
+}
+
+@media(max-width:1600.8px) {
+
+    .contact__leftsect .title,
+    .contact__rightsect .title {
+        font-size: 28px;
+        line-height: 140%;
+        margin-bottom: 40px;
+    }
+
+    .contact__leftsect .descr a,
+    .contact__leftsect .descr p {
+        font-size: 18px;
+        line-height: 150%;
+    }
+
+    .contact__leftsect ul.contsoc li a img {
+        height: 30px;
+    }
+
+    .contact__leftsect .subscribe .subscribe__title {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .contact__leftsect .subscribe .submbtn {
+        font-size: 21px;
+        margin-top: 20px;
+    }
+
+    .contform .contsubm {
+        margin-top: 10px;
+        font-size: 21px;
+    }
+
+    .contform .contform__inpfield input {
+        font-size: 18px;
+        padding-left: 20px;
+        height: 52px;
+    }
+
+    .contform .contform__inpfield textarea {
+        font-size: 18px;
+        padding-left: 20px;
+        height: 135px;
+    }
+
+    .contact__rightsect {
+        padding-left: 50px;
+    }
+
+    .contact__leftsect {
+        max-width: 100%;
+        padding-right: 50px;
+    }
+
+    .contform:after {
+        left: -65px;
+        height: calc(100% - 85px);
+    }
+
+    .contact-section {
+        padding: 60px 0;
+    }
+
+    .contact__leftsect .subscribe .subscribe__inpfield input {
+        height: 52px;
+        font-size: 18px;
+    }
+
+    .contform:after {
+        display: none;
+    }
+
+}
+
+@media(max-width:991.8px) {
+
+    .contact__leftsect .title,
+    .contact__rightsect .title {
+        font-size: 34px;
+    }
+
+    .contact__leftsect .descr a,
+    .contact__leftsect .descr p {
+        font-size: 21px;
+    }
+
+    .contact__leftsect {
+        padding-right: 0;
+    }
+
+    .contact__rightsect {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .contform:after {
+        display: none;
+    }
+
+    .contact__rightsect {
+        padding-top: 50px;
+        border-top: 2px solid rgba(0, 0, 0, 0.5);
+    }
+
+    .contact__leftsect {
+        padding-bottom: 50px;
+    }
+
+}
+
+@media(max-width:575.8px) {
+
+    .contact-section {
+        padding: 30px 0;
+    }
+
+    .contact__leftsect .title,
+    .contact__rightsect .title {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    .contact__leftsect .descr a,
+    .contact__leftsect .descr p {
+        font-size: 16px;
+    }
+
+    .contact__leftsect .subscribe {
+        padding-top: 30px;
+    }
+
+    .contact__leftsect .subscribe .subscribe__title {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .contact__leftsect .subscribe .subscribe__inpfield input {
+        padding-left: 15px;
+        height: 42px;
+        font-size: 16px;
+    }
+
+    .contact__leftsect .subscribe .submbtn,
+    .contform .contsubm {
+        margin-bottom: 10px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 16px;
+        padding: 0;
+        margin-bottom: 0;
+    }
+
+    .contact__leftsect {
+        padding-bottom: 20px;
+    }
+
+    .contact__rightsect {
+        padding-top: 30px;
+    }
+
+    .contform .contform__inpfield input {
+        height: 42px;
+        padding-left: 15px;
+        font-size: 16px;
+    }
+
+    .contform .contform__inpfield textarea {
+        font-size: 16px;
+        padding-left: 15px;
+        padding-top: 10px;
+    }
+
+    .contact__leftsect .title {
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    .contact__leftsect .descr p {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .contact__leftsect .subscribe .subscribe__title {
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .contact__leftsect .subscribe .submbtn {
+        margin-top: 10px;
+    }
+
+    .contact__leftsect .subscribe .submbtn,
+    .contform .contsubm {
+        height: 34px;
+        font-weight: 800;
+        font-size: 13px;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+    }
+
+    .contact__rightsect {
+        border-top: none;
+    }
+
+    .contact__rightsect .title {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 28px;
+        margin-bottom: 20px;
+    }
+
+    .contform .contsubm {
+        margin-top: 0;
+    }
+}
